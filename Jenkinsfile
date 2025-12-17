@@ -183,7 +183,7 @@ pipeline {
                         export KUBECONFIG=/var/lib/jenkins/.kube/config
 
                         # Mettre à jour l'image dans le YAML
-                        sed -i 's|image:.*malekmouelhi7/student-management.*|image: ${env.DOCKER_IMAGE}:${env.DOCKER_TAG}|g' spring-deployment.yaml
+                        sed -i 's|image:.*ghalya3001/student-management.*|image: ${env.DOCKER_IMAGE}:${env.DOCKER_TAG}|g' spring-deployment.yaml
 
                         # Déployer
                         kubectl apply -f spring-deployment.yaml -n ${env.K8S_NAMESPACE}
