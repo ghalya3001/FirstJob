@@ -6,7 +6,7 @@ pipeline {
     }
     
     environment {
-        DOCKER_IMAGE = 'malekmouelhi7/student-management'
+        DOCKER_IMAGE = 'ghalya3001/student-management'
         DOCKER_TAG = "${env.BUILD_NUMBER}"
         K8S_NAMESPACE = 'devops'
         SONARQUBE_URL = 'http://localhost:9000'
@@ -23,8 +23,8 @@ pipeline {
 
         stage('Checkout Code') {
             steps {
-                git branch: 'master',
-                    url: 'https://github.com/Malekmouelh/jenkins.git'
+                git branch: 'devops',
+                    url: 'https://github.com/ghalya3001/FirstJob.git'
                 echo "✅ Code récupéré depuis GitHub"
             }
         }
