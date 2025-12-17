@@ -11,8 +11,7 @@ pipeline {
         K8S_NAMESPACE = 'devops'
         SONARQUBE_URL = 'http://localhost:9000'
         SPRING_BOOT_URL = 'http://localhost:30080'
-        SONARQUBE_TOKEN = 'sqa_5f2d866d8f39ccd9e23aaae8619b0da81e5d7853'
-
+        SONARQUBE_TOKEN = 'squ_6dd6027b7ebd8f4c65a5a9cbd83333611c73f210'
     }
 
     stages {
